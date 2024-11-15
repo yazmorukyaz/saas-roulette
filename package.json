@@ -1,0 +1,23 @@
+{
+  "name": "saasroulette",
+  "version": "1.0.0",
+  "description": "An innovative platform for discovering SaaS tools through an interactive roulette mechanism",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^7.8.2"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.6.4",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}
